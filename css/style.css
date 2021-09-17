@@ -1,0 +1,129 @@
+html {
+    font-size: 24px
+}
+body {
+    background-color: #E3DACA;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.wrapper {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.title {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+
+
+.header {
+    text-align: center;
+    padding: 0.8rem 0;
+}
+.header__title {
+    font-size: 1.7rem;
+}
+.header__subtitle {
+    font-size: 1.4rem;
+    opacity: 0.6;
+}
+
+
+
+.main-image {
+    width: 100%;
+}
+.main-image img {
+    display: block;
+    max-width: 100%;
+}
+.main-image figcaption {
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: center;
+    padding: 0.2rem 0 0 0;
+}
+
+
+
+.info {
+    padding: 3rem 0 1rem;
+}
+.info__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 3rem;
+}
+.info__title {
+    font-size: 1.4rem;
+}
+.info__flex-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.info__flex-item_bottom {
+    row-gap: 2rem;
+    padding: 0 1.4rem;
+}
+.info__text {
+    flex: 0 0 65%;
+    display: flex;
+    align-items: center;
+}
+.info__picture {
+    flex: 0 0 25%;
+    align-self: center;
+}
+.info__picture img {
+    display: block;
+    max-width: 100%;
+}
+.info__paragraph {
+    text-align: justify;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        max-width: 100%;
+    }
+    .main-image figcaption {
+        padding: 0 1em;
+    }
+}
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 21px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .info__flex {
+        row-gap: 1rem;
+    }
+    .info__flex-item {
+        row-gap: 2rem;
+    }
+    .info__flex-item_middle {
+        flex-wrap: wrap-reverse;
+    }
+    .info__picture, .info__text {
+        flex: 0 0 100%;
+        padding: 0 1.4rem;
+    }
+}
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 350px) {
+    html {
+        font-size: 16px;
+    }
+}
